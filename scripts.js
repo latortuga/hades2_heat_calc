@@ -1,78 +1,78 @@
 var data = [
     {
-        "name": "Vow of Blood",
+        "name": "Vow of Pain",
         "levels": [
             "All foes deal +0% damage",
             "All foes deal +20% damage",
             "All foes deal +60% damage",
             "All foes deal +100% damage"
         ],
-        "heats": [0, 1, 3, 5]
+        "fear": [0, 1, 3, 5]
     },
     {
-        "name": "Vow of Dominance",
+        "name": "Vow of Grit",
         "levels": [
             "All foes have +0% health",
             "All foes have +10% health",
             "All foes have +20% health",
             "All foes have +30% health"
         ],
-        heats: [0, 1, 2, 3]
+        fear: [0, 1, 2, 3]
     },
     {
-        "name": "Vow of Rebuke",
+        "name": "Vow of Wards",
         "levels": [
-            "All foes have 0 barrier",
+            "All foes have 0 barriers",
             "All foes have 1 barrier",
-            "All foes have 2 barrier"
+            "All foes have 2 barriers"
         ],
-        heats: [0, 1, 2]
+        fear: [0, 1, 2]
     },
     {
-        "name": "Vow of Fury",
+        "name": "Vow of Frenzy",
         "levels": [
             "All foes are +0% faster",
             "All foes are +20% faster",
             "All foes are +40% faster"
         ],
-        heats: [0, 3, 6]
+        fear: [0, 3, 6]
     },
     {
-        "name": "Vow of Suffering",
+        "name": "Vow of Hordes",
         "levels": [
-            "In each encounter, you take +0% bonus damage the first time you are struck",
-            "In each encounter, you take +100% bonus damage the first time you are struck",
-            "In each encounter, you take +300% bonus damage the first time you are struck"
+            "Most encounters have +0% more foes",
+            "Most encounters have +20% more foes",
+            "Most encounters have +40% more foes",
+            "Most encounters have +60% more foes"
         ],
-        heats: [0, 2, 4]
+        fear: [0, 1, 2, 3],
     },
     {
-        "name": "Vow of Commotion",
+        "name": "Vow of Menace",
         "levels": [
-            "Most encounters have 0% more foes",
-            "Most encounters have 20% more foes",
-            "Most encounters have 40% more foes",
-            "Most encounters have 60% more foes"
+            "Most foes have 0% chance to be from the next Region (if there is one.)",
+            "Most foes have 10% chance to be from the next Region (if there is one.)",
+            "Most foes have 25% chance to be from the next Region (if there is one.)",
         ],
-        heats: [0, 1, 2, 3],
+        fear: [0, 1, 3],
     },
     {
-        "name": "Vow of Haunting",
+        "name": "Vow of Return",
         "levels": [
-            "Most slain foes have 0% chance to become a Revenant",
-            "Most slain foes have 25% chance to become a Revenant",
-            "Most slain foes have 50% chance to become a Revenant"
+            "Most slain foes have +0% chance to become a Revenant",
+            "Most slain foes have +25% chance to become a Revenant",
+            "Most slain foes have +50% chance to become a Revenant"
         ],
-        heats: [0, 1, 2],
+        fear: [0, 1, 2],
     },
     {
-        "name": "Vow of Wandering",
+        "name": "Vow of Fangs",
         "levels": [
-            "Most foes have 0% chance to be from the next Region (if there is one)",
-            "Most foes have 10% chance to be from the next Region (if there is one)",
-            "Most foes have 25% chance to be from the next Region (if there is one)"
+            "Most foes with Armor also have 0 random Perks.",
+            "Most foes with Armor also have 1 random Perk.",
+            "Most foes with Armor also have 2 random Perks.",
         ],
-        heats: [0, 1, 3],
+        fear: [0, 2, 5],
     },
     {
         "name": "Vow of Scars",
@@ -82,68 +82,82 @@ var data = [
             "Any healing effects are 50% effective",
             "Any healing effects are 0% effective"
         ],
-        heats: [0, 1, 2, 4],
+        fear: [0, 1, 2, 4],
     },
     {
-        "name": "Vow of Destitution",
+        "name": "Vow of Debt",
         "levels": [
             "All items that cost gold are 0% more expensive",
             "All items that cost gold are 40% more expensive",
             "All items that cost gold are 80% more expensive"
         ],
-        heats: [0, 1, 2],
+        fear: [0, 1, 2],
     },
     {
-        "name": "Vow of Panic",
+        "name": "Vow of Shadow",
         "levels": [
-            "You enter each location with 100% magick",
-            "You enter each location with 0% magick",
+            "All Encounters with Wardens contain no Shadow Servants.",
+            "All Encounters with Wardens contain no fewer than 1 Shadow Servant.",
         ],
-        heats: [0, 1],
+        fear: [0, 2],
     },
     {
-        "name": "Vow of Forsaking",
-        "levels": [
-            "After you choose a Boon, 0 unpicked blessings will not appear again this night",
-            "After you choose a Boon, 2 unpicked blessings will not appear again this night",
-        ],
-        heats: [0, 2],
-    },
-    {
-        "name": "Vow of Bitterness",
+        "name": "Vow of Forfeit",
         "levels": [
             "The first 0 Boons in each Region become Red Onions instead",
             "The first 1 Boons in each Region become Red Onions instead",
         ],
-        heats: [0, 1],
+        fear: [0, 3],
     },
     {
-        "name": "Vow of Arrogance",
-        "levels": [
-            "Whenever you choose a Boon, Prime 0 magick for each Rarity greater than Common",
-            "Whenever you choose a Boon, Prime 5 magick for each Rarity greater than Common",
-            "Whenever you choose a Boon, Prime 10 magick for each Rarity greater than Common",
-        ],
-        heats: [0, 1, 4],
-    },
-    {
-        "name": "Vow of Desperation",
+        "name": "Vow of Time",
         "levels": [
             "You have infinite time to fight through each Region (or else...)",
             "You have 9:00 to fight through each Region (or else...)",
             "You have 7:00 to fight through each Region (or else...)",
             "You have 5:00 to fight through each Region (or else...)",
         ],
-        heats: [0, 1, 3, 6],
+        fear: [0, 1, 3, 6],
     },
     {
-        "name": "Vow of Abandon",
+        "name": "Vow of Void",
         "levels": [
-            "Nullify the benefits of 0% of your Arcana Cards",
-            "Nullify the benefits of 100% of your Arcana Cards",
+            "You have access to 100% of your Grasp for your Arcana.",
+            "You have access to 60% of your Grasp for your Arcana.",
+            "You have access to 40% of your Grasp for your Arcana.",
+            "You have access to 20% of your Grasp for your Arcana.",
+            "You have access to 0% of your Grasp for your Arcana.",
         ],
-        heats: [0, 5],
-    }
+        fear: [0, 1, 2, 3, 5],
+    },
+    {
+        "name": "Vow of Hubris",
+        "levels": [
+            "After you choose a Boon, Prime 0 Magick for each Rarity greater than Common.",
+            "After you choose a Boon, Prime 3 Magick for each Rarity greater than Common.",
+            "After you choose a Boon, Prime 6 Magick for each Rarity greater than Common.",
+        ],
+        fear: [0, 1, 2],
+    },
+    {
+        "name": "Vow of Denial",
+        "levels": [
+            "After you choose a Boon, 0 unpicked blessings will not appear again this night",
+            "After you choose a Boon, 2 unpicked blessings will not appear again this night",
+        ],
+        fear: [0, 2],
+    },
+    {
+        "name": "Vow of Rivals",
+        "levels": [
+            "The Guardians of the first 0 Regions shall be stronger in various ways.",
+            "The Guardians of the first 1 Region shall be stronger in various ways.",
+            "The Guardians of the first 2 Regions shall be stronger in various ways.",
+            "The Guardians of the first 3 Regions shall be stronger in various ways.",
+            "The Guardians of the first 4 Regions shall be stronger in various ways.",
+        ],
+        fear: [0, 2, 5, 8, 12],
+    },
 ]
 var elements = {}
 var emojis = {
@@ -164,12 +178,12 @@ function setup() {
     let locks = decodeLocks(params.get("locks"));
     let target = decodeTarget(params.get("target"));
     let inputs = document.getElementById("inputs")
-    let max_heat = 0
+    let max_fear = 0
     for (let i = 0; i < data.length; i++) {
         let datum = data[i]
-        let heats = datum["heats"]
+        let fear = datum["fear"]
         let levels = datum["levels"]
-        max_heat += heats[heats.length - 1]
+        max_fear += fear[fear.length - 1]
 
         let row = document.createElement("tr")
         inputs.appendChild(row)
@@ -199,9 +213,9 @@ function setup() {
         datum["el_input"] = el_input
         addTh(row, el_input)
 
-        let el_heat_flavor = document.createElement("span")
-        datum["el_heat_flavor"] = el_heat_flavor
-        addTh(row, el_heat_flavor)
+        let el_fear_flavor = document.createElement("span")
+        datum["el_fear_flavor"] = el_fear_flavor
+        addTh(row, el_fear_flavor)
 
         let el_lock_wrapper = document.createElement("span")
         addTh(row, el_lock_wrapper)
@@ -217,37 +231,37 @@ function setup() {
         datum["el_lock_flavor"] = el_lock_flavor
         el_lock_wrapper.appendChild(el_lock_flavor)
     }
-    elements["total_heat"] = document.getElementById("total_heat")
-    elements["target_heat"] = document.getElementById("target_heat")
-    elements["target_heat"].value = target
-    elements["target_heat"].max = max_heat
+    elements["total_fear"] = document.getElementById("total_fear")
+    elements["target_fear"] = document.getElementById("target_fear")
+    elements["target_fear"].value = target
+    elements["target_fear"].max = max_fear
     elements["target_flavor"] = document.getElementById("target_flavor")
     elements["randomize"] = document.getElementById("randomize")
     refresh()
 }
 
 function refresh() {
-    let total_heat = 0
+    let total_fear = 0
     for (let i = 0; i < data.length; i++) {
         let datum = data[i]
         let value = parseInt(datum["el_input"].value, 10)
         let level = datum["levels"][value]
-        let heat = datum["heats"][value]
+        let fear = datum["fear"][value]
         let locked = datum["el_lock"].checked
         datum["el_flavor"].innerText = level
-        datum["el_heat_flavor"].innerText = heat + emojis["fire"]
+        datum["el_fear_flavor"].innerText = fear + emojis["fire"]
         datum["el_lock_flavor"].innerText = emojis[locked ? "lock" : "unlock"]
         datum["el_name_wrapper"].setAttribute("class", locked ? "locked" : "")
-        total_heat += heat
+        total_fear += fear
     }
-    elements["total_heat"].innerText = total_heat
-    elements["target_flavor"].innerText = elements["target_heat"].value
+    elements["total_fear"].innerText = total_fear
+    elements["target_flavor"].innerText = elements["target_fear"].value
 }
 
 function randomize() {
-    target_heat = parseInt(elements["target_heat"].value, 10)
-    max_heat = parseInt(elements["target_heat"].max, 10)
-    let solns = randomizeHelper(0, target_heat, 0, max_heat)
+    target_fear = parseInt(elements["target_fear"].value, 10)
+    max_fear = parseInt(elements["target_fear"].max, 10)
+    let solns = randomizeHelper(0, target_fear, 0, max_fear)
     if (solns.length == 0) {
         alert("Target fear cannot be achieved with current locked values.")
     } else {
@@ -267,16 +281,16 @@ function randomizeHelper(i, target, current, max) {
         return current == target ? [[]] : []
     }
     let datum = data[i]
-    let heats = datum["heats"]
+    let fear = datum["fear"]
     let solns = []
-    for (let j = 0; j < heats.length; j++) {
+    for (let j = 0; j < fear.length; j++) {
         let locked_value = parseInt(datum["el_input"].value, 10)
         if (datum["el_lock"].checked && j != locked_value) {
             continue
         }
-        let new_heat = current + heats[j]
-        let new_max = max - heats[heats.length - 1]
-        let recursive_solns = randomizeHelper(i + 1, target, new_heat, new_max)
+        let new_fear = current + fear[j]
+        let new_max = max - fear[fear.length - 1]
+        let recursive_solns = randomizeHelper(i + 1, target, new_fear, new_max)
         for (let k = 0; k < recursive_solns.length; k++) {
             let soln = recursive_solns[k]
             soln.push(j)
@@ -290,7 +304,7 @@ function getUrl() {
     let url = window.location.href.split("?")[0]
     let values = []
     let locks = []
-    let target = parseInt(elements["target_heat"].value, 10)
+    let target = parseInt(elements["target_fear"].value, 10)
     for (let i = 0; i < data.length; i++) {
         let datum = data[i]
         values.push(parseInt(datum["el_input"].value, 10))
